@@ -1,0 +1,290 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 1200px;
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.container2 {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.button {
+	display: block;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	border: 2px solid;
+	line-height: 25px;
+	font-weight: normal;
+}
+
+
+/*=====================ШАПКА==========================*/
+
+.index-header {
+	padding-top: 60px;
+	padding-bottom: 80px;
+	background-color: #ffcb78;
+	background-image: url(../img/header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.main-header-logo {
+	filter: drop-shadow(0 0 20px black);
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 120px;
+}
+
+.site-navigation {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.site-navigation-item:not(:last-child) {
+	margin-right: 60px;
+}
+
+.site-navigation-item a {
+	display: block;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 15px 0;
+	font-weight: bold;
+}
+
+.site-navigation-item a:hover {
+	text-decoration: underline;
+}
+
+.tag {
+	margin: 0;
+	color: #ffffff;
+	font-size: 70px;
+	line-height: 70px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.slider {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+}
+
+.slider li {
+	height: 6px;
+	width: 6px;
+	background-color: #ffffff;
+
+}
+
+.slider li:not(:last-child) {
+	margin-right: 25px;
+}
+
+
+/*===========================НОВИНКИ=============================*/
+
+.novelties {
+	padding: 90px 0 0;
+}
+
+.section-title {
+	text-transform: uppercase;
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 80px;
+}
+
+.product-card-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.product-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 395px;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	padding: 0 35px;
+	margin-bottom: 100px;
+}
+
+.product-card:nth-child(2n) {
+	border-left: none;
+}
+
+
+.product-title {
+	order: 1;
+	font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.product-description {
+	order: 1;
+	margin:0;
+	margin-bottom: 60px;
+}
+
+.product-ordering {
+	order: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.product-properties-container {
+	position: absolute;
+    width: 170px;
+    top: 0;
+    right: 0;
+}
+
+.product-properties {
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.product-consist {
+	margin: 0;
+	border-top: 1px solid #e5e5e5;
+	font-size: 14px;
+	line-height: 28px;
+	padding-top: 15px;
+}
+
+.product-properties td {
+	min-width: 80px;
+}
+
+.product-img {
+	margin-bottom: 15px;
+}
+
+.more-info-button {
+	margin-right: 5px;
+	color: #834700;
+	border-color: #834700;
+}
+
+.buy-button {
+	margin-right: auto;
+	color: #ffffff;
+	border-color: #834700;
+	background-color: #834700;
+}
+
+/*========================ПРЕИМУЩЕСТВА============================*/
+
+.advantages {
+	background-color: #ffb961;
+}
+
+.advantage-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	overflow-x: auto;
+}
+
+.advantage-item {
+	position: relative;
+	flex-shrink: 0;
+	padding: 80px 90px;
+	width: 400px;
+}
+
+.advantage-item:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -1px;
+	bottom: 0;
+	height: auto;
+	width: 1px;
+	background-color: #b3590b;
+	margin: 85px 0;
+}
+
+.advantage-item::before {
+	content: "";
+	position: static;
+	display: block;
+	height: 70px;
+	width: 70px;
+	margin-bottom: 30px;
+}
+
+.first::before {
+	background-image: url("../img/first.png");
+}
+
+.second::before {
+	background-image: url("../img/second.png");
+}
+
+.third::before {
+	background-image: url("../img/third.png");
+}
+
+.advantage-title {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.advantage-info {
+	margin: 0;
+	color: #505050;
+}
